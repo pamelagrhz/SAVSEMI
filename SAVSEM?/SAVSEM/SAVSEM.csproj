@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A15F60D0-E4E0-40CE-94EF-8FC24D68A08F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SAVSEM</RootNamespace>
+    <AssemblyName>SAVSEM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <Content Include="Index.master" />
+    <Content Include="Default.aspx" />
+    <Content Include="Ayuda.aspx" />
+    <Content Include="Registro.aspx" />
+    <Content Include="RegistroVendedor.aspx" />
+    <Content Include="RegistroExitoso.aspx" />
+    <Content Include="RegistroVendedorExitoso.aspx" />
+    <Content Include="GestionUsuario.aspx" />
+    <Content Include="Compras.aspx" />
+    <Content Include="Ventas.aspx" />
+    <Content Include="Buscar.aspx" />
+    <Content Include="Producto.aspx" />
+    <Content Include="Administrador.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.master.cs">
+      <DependentUpon>Index.master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.master.designer.cs">
+      <DependentUpon>Index.master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.aspx.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.aspx.designer.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVendedor.aspx.cs">
+      <DependentUpon>RegistroVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVendedor.aspx.designer.cs">
+      <DependentUpon>RegistroVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroExitoso.aspx.cs">
+      <DependentUpon>RegistroExitoso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroExitoso.aspx.designer.cs">
+      <DependentUpon>RegistroExitoso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVendedorExitoso.aspx.cs">
+      <DependentUpon>RegistroVendedorExitoso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVendedorExitoso.aspx.designer.cs">
+      <DependentUpon>RegistroVendedorExitoso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionUsuario.aspx.cs">
+      <DependentUpon>GestionUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionUsuario.aspx.designer.cs">
+      <DependentUpon>GestionUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.aspx.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.aspx.designer.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

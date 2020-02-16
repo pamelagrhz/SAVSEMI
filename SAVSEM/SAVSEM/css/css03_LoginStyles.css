@@ -1,0 +1,17 @@
+.LoginForm{
+	color: white;
+}
+.LoginForm a:hover{
+	color:#E6E6E6;
+}
+.LoginForm a:link{
+	color: white;
+	text-decoration: none;
+}
+.LoginForm a:active{
+	color: #A8A8A8;
+}
+.LoginForm a:visited{
+	color: #A8A8A8;
+	text-decoration: none;
+}

@@ -1,0 +1,15 @@
+C:\Users\danil\OneDrive\Documentos\Projects\SAVSEM\SAVSEM\bin\SAVSEM.dll
+C:\Users\danil\OneDrive\Documentos\Projects\SAVSEM\SAVSEM\bin\SAVSEM.pdb
+C:\Users\danil\OneDrive\Documentos\Projects\SAVSEM\SAVSEM\obj\Debug\SAVSEM.dll
+C:\Users\danil\OneDrive\Documentos\Projects\SAVSEM\SAVSEM\obj\Debug\SAVSEM.pdb
+C:\Users\danil\OneDrive\Documentos\Projects\SAVSEM\SAVSEM\obj\Debug\SAVSEM.csprojResolveAssemblyReference.cache
+C:\Users\Alann Martinez\Desktop\SAVSEM\SAVSEM\bin\SAVSEM.dll
+C:\Users\Alann Martinez\Desktop\SAVSEM\SAVSEM\bin\SAVSEM.pdb
+C:\Users\Alann Martinez\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.csprojResolveAssemblyReference.cache
+C:\Users\Alann Martinez\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.dll
+C:\Users\Alann Martinez\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.pdb
+C:\Users\Pamela\Desktop\SAVSEM\SAVSEM\bin\SAVSEM.dll
+C:\Users\Pamela\Desktop\SAVSEM\SAVSEM\bin\SAVSEM.pdb
+C:\Users\Pamela\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.csprojResolveAssemblyReference.cache
+C:\Users\Pamela\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.dll
+C:\Users\Pamela\Desktop\SAVSEM\SAVSEM\obj\Debug\SAVSEM.pdb

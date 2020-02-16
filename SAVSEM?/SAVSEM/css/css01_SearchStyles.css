@@ -1,0 +1,12 @@
+.Buscar {
+	width: 50%;
+}
+.Buscar input[type=text]{ 
+	width: 80%; 
+	font-size: 20px; 
+	padding: 2px;
+}
+.imageButton{ 
+	width: 25px; 
+	height: 25px; 
+}

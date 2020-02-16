@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" Inherits="SAVSEM.Index" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SAVSEM</title>
+	<meta name="description" content="Compra Venta de Semillas">
+    <meta name="autor" content="INFORUPIIC">
+    <link rel="stylesheet" type="text/css" href="css/css06_GeneralStyles.css"> 
+    <link rel="stylesheet" type="text/css" href="css/css03_LoginStyles.css"> 
+    <link rel="stylesheet" type="text/css" href="css/css01_SearchStyles.css"> 
+    <link rel="stylesheet" type="text/css" href="css/css01_UserDataStyles.css">
+    <style>
+    </style>
+</head>
+<body>
+	<form runat="server">
+		<header>
+			<div class="Logo">
+				<asp:HyperLink id="linkIndex" NavigateUrl="Default.aspx" Text="SAVSEMI" CssClass="Title" runat="server"/>
+			</div>
+			<div class="Buscar">
+				<asp:TextBox id="txtBuscar" placeholder="Buscar" OnTextChanged="imbtnBuscar_Click" runat="server"/>
+				<asp:ImageButton id="imbtnBuscar" ImageUrl="~/img/sr.png" CssClass="imageButton" type="button" OnClick="imbtnBuscar_Click" runat="server"/>
+			</div>
+			<div class="userSpace">
+				<asp:Login id="lgUser" LoginButtonText="Iniciar sesión"
+					CreateUserText="¿No tienes cuenta? Registrate aquí"  CreateUserUrl="Registro.aspx" DisplayRememberMe="false" 
+					OnLoggingIn="btnIngresar_Click" TextLayout="TextOnLeft" TitleText="" CssClass="LoginForm" runat="server"/>
+				<asp:Panel id="userData" runat="server">
+					<p>
+					<asp:Label id="lblBienvenido" CssClass="bienvenido" runat="server"/>
+					</p>
+					<p>
+						<asp:LinkButton id="linkVenta" OnClick="linkVenta_Click" Text="Publicar" CssClass="gestion" runat="server" />
+						<asp:LinkButton id="linkCompra" OnClick="linkCompra_Click" Text="Pedidos" CssClass="gestion" runat="server" />
+						<asp:LinkButton id="linkGestion" OnClick="linkGestion_Click" Text="Gestionar cuenta" CssClass="gestion" runat="server" />
+						<asp:LinkButton id="linkAdministrador" OnClick="linkAdministrador_Click" Text="Administrador" CssClass="gestion" runat="server" />
+						<asp:LinkButton id=	"lnkbtnSalir" OnClick="lnkbtnSalir_Click" Text="Salir" CssClass="gestion" runat="server"/>
+					</p>
+				</asp:Panel>
+			</div>
+			<nav>
+				<asp:HyperLink id="linkInicio" NavigateUrl="Default.aspx" Text="Inicio" runat="server"/>
+				<asp:HyperLink id="linkVenderProductos" NavigateUrl="RegistroVendedor.aspx" Text="¿Quiéres vender tus productos?" runat="server"/>
+				<asp:HyperLink id="linkAyuda" NavigateUrl="Ayuda.aspx" Text="Ayuda" runat="server"/>
+			</nav>
+		</header>
+	    <asp:ContentPlaceHolder id="cl" runat="server" /> 
+	    <footer>
+	    	<h4>Aplicación Web SAVSEM desarrollado por INFORUPIIC 2018.</h4>
+	    	<h5>Compatible para navegadores: </h5>
+	    	<div class="NavList">
+	    		Google Chrome 66.0.3359.181.
+		    	<br>Firefox Quantum 60.0.1
+		    	<br>Microsoft Edge 41.16299.402.0
+	    	</div>
+	    </footer>
+	</form>
+</body>
+</html>
